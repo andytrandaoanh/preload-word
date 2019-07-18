@@ -46,7 +46,7 @@ class LexGUI:
         self.tabControl.pack(expand = 1, fill = "both")
 
     def fileDialog(self):
-        self.filename = filedialog.askopenfilename(initialdir = "E:/FULLTEXT/WORDCLEAN", 
+        self.filename = filedialog.askopenfilename(initialdir = "E:/FULLTEXT/WORD/WORDCLEAN", 
             title = "Select clwan word list", 
             filetypes = (("Text files", "*.txt"), ("all files", "*.*")))
         if (self.filename):
@@ -118,7 +118,7 @@ class LexGUI:
 
 
     def fileDialog2(self):
-        self.filename21 = filedialog.askopenfilename(initialdir = "E:/FULLTEXT/TRASH", 
+        self.filename21 = filedialog.askopenfilename(initialdir = "E:/FULLTEXT/WORD/TRASH", 
             title = "Select a file", filetypes = (("Text files", "*.txt"),  ("all files", "*.*")))
         if (self.filename21):
             self.filepath21.set(self.filename21) #set the textbox to the file path
